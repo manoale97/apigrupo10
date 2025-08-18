@@ -154,3 +154,18 @@ def obtenerFraseInvitado():
         'frase': frase,
         'resultado': 'Tu galleta de la fortuna dice: ' + frase
     })
+
+@app.route('/api/info')
+def info():
+    return jsonify({
+        'nombre':'API galletas de la fortuna',    
+        'version': '1.0.0',
+        'descripcion':'API para crear y gestionar galletas de la fortuna',
+        'autores':'Manolo Revelo, Sebastian Sandoval, Isaac Mora'
+    })
+ 
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=8001)
+ 
+
+
