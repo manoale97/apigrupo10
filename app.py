@@ -154,7 +154,7 @@ def obtenerFraseInvitado():
         'frase': frase,
         'resultado': 'Tu galleta de la fortuna dice: ' + frase
     })
-
+## metodo Informacion general de API
 @app.route('/api/info')
 def info():
     return jsonify({
